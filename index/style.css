@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap&subset=cyrillic,cyrillic-ext,latin-ext');
 
 body{
 	background-color: #eee;
@@ -18,7 +18,7 @@ body{
 
 .lib.tab{
 	padding: 20px;
-	padding-top: 40px;
+	padding-top: 30px;
 	display: none;
 }
 
@@ -27,7 +27,6 @@ body{
 }
 
 .lib.sidebar{
-	border-right: 1px solid #ccc;
 }
 
 .lib.page-name{
@@ -50,13 +49,68 @@ body{
 
 .lib.elements-navigation li a{
 	text-decoration: none;
-	color: #777;
+	color: #333;
 	transition-duration: .2s;
 	transition-property: color;
 }
 
 .lib.elements-navigation li a:hover,
 .lib.elements-navigation li a.active{
-	color: #000;
-	text-decoration: underline;
+	color: #C2185B;
+}
+
+.lib.elements-navigation li a:before{
+	content: '> ';
+	transition-duration: .2s;
+	color: transparent;
+	font-size: 0px;
+}
+
+.lib.elements-navigation li a.active:before{
+	content: '> ';
+	color: inherit;
+	font-size: inherit;
+}
+
+.lib.tab-heading:before{
+	content: '> ';
+}
+
+h1.lib.tab-heading,
+h2.lib.tab-heading,
+h3.lib.tab-heading{
+	width: 100%;
+	margin-top: 0;
+	font-weight: normal;
+	color: #880E4F;
+}
+
+h1.lib.tab-heading{
+	padding-top: 0;
+	padding-bottom: 30px;
+	font-size: 30px;
+}
+
+h2.lib.tab-heading,
+h3.lib.tab-heading{
+	color: #AD1457;
+}
+
+h2.lib.tab-heading{
+	font-size: 24px;
+}
+
+h3.lib.tab-heading{
+	font-size: 20px;
+}
+
+.lib.tab .color-block{
+	padding: 20px;
+}
+
+hr.lib{
+	background-color: #888;
+	height: 1px;
+	border: 0;
+	margin: 40px 0;
 }

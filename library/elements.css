@@ -1,0 +1,33 @@
+:root{
+	--tcol-light: #1C1D1F; /* for light theme*/
+	--tcol-dark: #fff; /* for dark theme*/
+}
+
+.heading{
+	color: var(--tcol-light);
+	font-weight: 800;
+}
+
+h1.heading{
+	font-size: 80px;
+	line-height: 109px;
+}
+
+h2.heading{
+	font-size: 60px;
+	line-height: 82px;
+}
+
+h3.heading{
+	font-size: 30px;
+	line-height: 43px;
+}
+
+h4.heading{
+	font-size: 24px;
+	line-height: 34px;
+}
+
+.dark-theme .heading{
+	color: var(--tcol-dark);
+}
