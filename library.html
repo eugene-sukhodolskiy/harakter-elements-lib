@@ -18,26 +18,12 @@
 	<div class="lib app-container">
 		<div class="row">
 			<div class="col-3">
-				<aside class="lib sidebar">
-	<header class="lib nav-header">
-		<h3 class="lib page-name">
-			Harakter
-			<br>Elements
-			<br>Library
-		</h3>
-	</header>
-	<nav class="lib elements-navigation">
-		<ul>
-			<li><a href="#tab=tab1" data-tab="tab1">ElementName</a></li>
-			<li><a href="#tab=tab2" data-tab="tab2">ElementName 2</a></li>
-		</ul>
-	</nav>
-</aside>
+				@join:aside.html;
 			</div>
 			
 			<div class="col-9">
-				<div class="lib tab" id="tab1">TAB1</div>
-				<div class="lib tab" id="tab2">TAB2</div>
+				@join:library/elements/tab1.html;
+				@join:library/elements/tab2.html;
 			</div>
 		</div>
 	</div>

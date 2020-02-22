@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext');
+
+body{
+	background-color: #eee;
+}
+
+.lib{
+	font-family: 'Open Sans';
+}
+
+.lib.app-container{
+	padding: 30px;
+	width: 100%;
+	max-width: 1200px;
+	background-color: #fff;
+	min-height: 100vh;
+}
+
+.lib.tab{
+	padding: 20px;
+	padding-top: 40px;
+	display: none;
+}
+
+.lib.tab.active{
+	display: block;
+}
+
+.lib.sidebar{
+	border-right: 1px solid #ccc;
+}
+
+.lib.page-name{
+	font-weight: 500;
+	margin-bottom: 30px;
+	font-size: 28px;
+	line-height: 32px;
+}
+
+.lib.elements-navigation ul{
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.lib.elements-navigation li{
+	list-style: none;
+	margin-bottom: 10px;
+	font-size: 17px;
+}
+
+.lib.elements-navigation li a{
+	text-decoration: none;
+	color: #777;
+	transition-duration: .2s;
+	transition-property: color;
+}
+
+.lib.elements-navigation li a:hover,
+.lib.elements-navigation li a.active{
+	color: #000;
+	text-decoration: underline;
+}
